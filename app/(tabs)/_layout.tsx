@@ -1,7 +1,7 @@
 
-import { Tabs } from 'expo-router';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { Tabs } from 'expo-router';
 
 export default function TabLayout() {
     return (
@@ -41,5 +41,5 @@ export default function TabLayout() {
         );
 }       
 
-
-       
+   
+        
