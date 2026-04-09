@@ -1,5 +1,6 @@
 
 import AntDesign from '@expo/vector-icons/AntDesign';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { Tabs } from 'expo-router';
 
@@ -34,6 +35,15 @@ export default function TabLayout() {
                 title: 'Sobre',
                 tabBarIcon: ({ color, focused, }) => (
                     <AntDesign name={focused ? 'info-circle' : 'info'} size={24} color={color} />
+                ),
+            }}
+          />
+           <Tabs.Screen 
+            name="toDoList" 
+            options={{
+                title: 'Nadadores',
+                tabBarIcon: ({ color, focused, }) => (
+                    <Ionicons name={focused ? 'list-circle' : 'list-circle-outline'} size={24} color={color} />
                 ),
             }}
           />
