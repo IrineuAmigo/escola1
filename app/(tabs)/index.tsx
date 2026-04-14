@@ -5,6 +5,10 @@ export default function Index() {
     <View style={styles.container}>
       
       <Text style={styles.text}>Página Inicial. </Text>
+
+      <Text>Bem-vindo!</Text>
+      <Text style={styles.text}>Aplicativo para treinos de natação</Text>
+      <Text style={styles.text}>Use as abas abaixo para organizar seus treinos.</Text>
       </View>
   );
 }

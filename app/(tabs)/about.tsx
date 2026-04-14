@@ -5,6 +5,7 @@ export default function About() {
     <View style={styles.container}>
       
       <Text style={styles.text}>Sobre nós </Text>
+          <Text>App de treinos de natação.</Text>
     </View>
   );
 }
