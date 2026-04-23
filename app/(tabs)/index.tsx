@@ -1,27 +1,34 @@
-import { StyleSheet, Text, View } from "react-native";
+
+import { StyleSheet, View } from "react-native";
+
+import ImageViewer from '@/components/ImageViewer';
+
+const PlaceholderImage = require('@/assets/images/natacao2.png'); 
+
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      
-      <Text style={styles.text}>Página Inicial. </Text>
+      <View style={styles.imageContainer}>
+        <ImageViewer imgSource={PlaceholderImage} />
 
-      <Text>Bem-vindo!</Text>
-      <Text style={styles.text}>Aplicativo para treinos de natação</Text>
-      <Text style={styles.text}>Use as abas abaixo para organizar seus treinos.</Text>
       </View>
+    </View>
   );
 }
+  
+ 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#25292e',
     alignItems: "center",
-    justifyContent: "center",
+
   },
-  text: {
-    color: '#fff',
+  imageContainer: {
+    flex: 1,
   },
+
 
 }); 
   

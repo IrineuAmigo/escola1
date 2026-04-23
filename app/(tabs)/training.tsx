@@ -21,4 +21,4 @@ export default function Training(){
   </View>
  );
 }
-const styles=StyleSheet.create({container:{flex:1,padding:20},input:{borderWidth:1},button:{backgroundColor:"#0A84FF",padding:10}});
+const styles=StyleSheet.create({container:{flex:1,padding:20},input:{borderWidth:1},button:{backgroundColor:"#0A84FF",padding:10},title:{fontSize:24,fontWeight:"bold",marginBottom:20}});
