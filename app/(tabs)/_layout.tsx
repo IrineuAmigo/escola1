@@ -2,6 +2,7 @@
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { Tabs } from 'expo-router';
 
 export default function TabLayout() {
@@ -44,6 +45,15 @@ export default function TabLayout() {
                 title: 'Nadadores',
                 tabBarIcon: ({ color, focused, }) => (
                     <Ionicons name={focused ? 'list-circle' : 'list-circle-outline'} size={24} color={color} />
+                ),
+            }}
+          />
+           <Tabs.Screen 
+            name="training" 
+            options={{
+                title: 'Treinamento',
+                tabBarIcon: ({ color, focused, }) => (
+                    <FontAwesome6 name={focused ? 'piscina' : 'nadador'} size={24} color={color} />
                 ),
             }}
           />
