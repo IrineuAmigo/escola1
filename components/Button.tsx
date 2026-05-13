@@ -4,9 +4,10 @@ import FontAmesome from '@expo/vector-icons/FontAwesome';
 type Props = {
   label: string;
   theme?: 'primary';
+  onPress?: () => void;
 };
 
-export default function BUtton({ label, theme }: Props) {
+export default function BUtton({ label, theme, onPress }: Props) {
   if (theme === 'primary') {
   return (
     <View 
@@ -15,8 +16,7 @@ export default function BUtton({ label, theme }: Props) {
         { borderWidth: 4, borderColor: '#ffd33d', borderRadius: 18},
       ]}>
       <Pressable 
-        style={[styles.button, { backgroundColor: "#0a84ff" }]} 
-        onPress={() => alert('Botão pressionado! ')}>
+        style={[styles.button, { backgroundColor: "#0a84ff" }]} onPress={onPress}>
         <FontAmesome name="picture-o" size={18} color="#0a84ff" style={ styles.buttonIcon  } />
         <Text style={[styles.buttonLabel, { color: '#25292' }]}>{label}</Text> 
 
